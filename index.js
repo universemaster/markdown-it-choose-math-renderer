@@ -10,7 +10,8 @@ for rendering output.
 /*jslint node: true */
 'use strict';
 
-var katex = require('katex');
+// var katex = require('katex');
+var katex = require('temml');
 
 /**
  * Test if potential opening or closing delimieter
