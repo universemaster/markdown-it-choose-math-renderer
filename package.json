@@ -1,7 +1,7 @@
 {
-    "name": "@iktakahiro/markdown-it-katex",
+    "name": "@iktakahiro/markdown-it-choose-math-renderer",
     "version": "4.0.1",
-    "description": "Fast math support for markdown-it with KaTeX",
+    "description": "Choose math renderer",
     "main": "index.js",
     "scripts": {
         "watch": "watchify browser.js -o bundle.js -v",
@@ -23,7 +23,8 @@
     "author": "Takahiro Ethan Ikeuchi @iktakahiro",
     "license": "MIT",
     "dependencies": {
-        "katex": "^0.13.0"
+        "katex": "^0.15.3",
+        "temml": "github:ronkok/Temml"  
     },
     "devDependencies": {
         "markdown-it": "11.0.0",
