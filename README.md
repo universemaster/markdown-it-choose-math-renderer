@@ -1,3 +1,9 @@
+# WORK IN PROGRESS. DO NOT USE.
+
+
+
+
+
 # markdown-it-katex
 
 Add Math to your Markdown
