@@ -385,7 +385,7 @@ module.exports = function math_plugin(md, options) {
     const katexInline = (latex) => {
         const displayMode = /\\begin\{(align|equation|gather|cd|alignat)\}/ig.test(latex);
         try {
-            return katex.renderToString(latex, { strict: false , displayMode: false });
+            return katex.renderToString(latex, { strict: false , displayMode: false, trust: true });
         } catch (error) {
             if (options.throwOnError) { console.log(error); }
             return `<span class="katex-error" title="${escapeHtml(latex)}">${escapeHtml(error.toString())}</span>`;
@@ -398,7 +398,7 @@ module.exports = function math_plugin(md, options) {
 
     const katexBlockRenderer = (latex) => {
         try {
-            return `<p class="katex-block">${katex.renderToString(latex, { strict: false, displayMode: true })}</p>`;
+            return `<p class="katex-block">${katex.renderToString(latex, { strict: false, displayMode: true, trust: true })}</p>`;
         } catch (error) {
             if (options.throwOnError) { console.log(error); }
             return `<p class="katex-block katex-error" title="${escapeHtml(latex)}">${escapeHtml(error.toString())}</p>`;
