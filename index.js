@@ -12,7 +12,7 @@ for rendering output.
 
 // var katex = require('katex');
 // var katex = require('../temml-option-for-linebreaks/dist/temml.cjs');
-var katex = require('../temml/dist/temml.cjs');
+var katex = require('../../temml/dist/temml.cjs');
 
 /**
  * Test if potential opening or closing delimieter
